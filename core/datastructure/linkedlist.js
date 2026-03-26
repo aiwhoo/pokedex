@@ -49,11 +49,10 @@ class LinkedList{
             this.head = new Node(value, this.head);
         }else{
             let current = this.head;
-            while(current.next != null && current.next.pokedexID > value.pokedexID){
+            while(current.next != null && current.next.value.pokedexID < value.pokedexID){
                 current = current.next;
             }
-           let newNode = new Node(value, current.next)
-            current.next = newNode;
+            current.next = new Node(value, current.next);
         }
     }
 }

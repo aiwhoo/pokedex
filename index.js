@@ -28,6 +28,17 @@ pokedexLinkedList.print();
 pokedexLinkedList.addBack(satalinachu);
 pokedexLinkedList.print();
 pokedexLinkedList.printRecursive();
+
+console.log("doing add in order")
+
+pokedexLinkedList.addInOrder(pikachu);
+pokedexLinkedList.addInOrder(lickitung);
+pokedexLinkedList.addInOrder(litten);
+pokedexLinkedList.addInOrder(infernape);
+pokedexLinkedList.addInOrder(mimikyu);
+pokedexLinkedList.addInOrder(bulbasaur);
+
+pokedexLinkedList.printRecursive();
 /*
 console.log(pokedexLinkedList.length);
 
