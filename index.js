@@ -1,5 +1,6 @@
 import Pokemon from './core/model/Pokemon.js'
 import LinkedList from './core/datastructure/linkedlist.js'
+import BinarySearchTree from "./core/datastructure/binarysearchtree.js";
 
 let lickitung = new Pokemon(108, "lickitung","normal");
 let pikachu = new Pokemon(25, "pikachu","electric");
@@ -45,3 +46,11 @@ console.log(pokedexLinkedList.length);
 pokedexLinkedList.addFront(lickitung);
 console.log(pokedexLinkedList.length);
 */
+console.log("BST Operations");
+let bst = new BinarySearchTree();
+bst.add(pikachu);
+bst.add(gengar);
+bst.add(charmander);
+bst.add(bulbasaur);
+
+bst.print();
